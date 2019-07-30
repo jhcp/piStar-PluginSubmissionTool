@@ -42,3 +42,7 @@ Technologies used
 
 
 todo:  --ignore './tmp/'  ???
+
+# API routes
+Get a list of all plugins, with id and name: '/api/plugins'
+Get the content of a specific plugin: 'api/plugins/:id'   , where :id is the actual id of the plugin
