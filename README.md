@@ -7,3 +7,15 @@ Technologies used
 - Backend framework: -> **Node.js**
 - Database: **Redis** (for login session storage) and **Postgres** (for the rest)
 - View: **Nunjucks** and **Materialize CSS**
+
+#How to run locally (with Docker)
+- Install NodeJS and Docker
+- Open the command prompt
+- install postgres: 'docker run --name EntitiesDB -p 5432:5432 -d -t kartoza/postgis'
+- install redis: 'docker run --name MemoryDB -p 6379:6379 -d -t redis'
+- run both images: 'docker start EntitiesDB MemoryDB'
+- check if both containers are active: 'docker ps'
+- Open the project root folder in the command prompt
+- run 'node src/index.js'
+- access the website through localhost:3000
+
